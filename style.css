@@ -8,8 +8,8 @@
 :root {
     --vinaccia: #511D43;
     --vinaccia-light: #511D43;
+    --vinaccia-light: #760C40;
     --vinaccia-dark: #301128;
-    --vinaccia-dark: #760C40;
     --cream: #F7F5F3;
     --white: #FFFFFF;
     --text-dark: #2C2C2C;
@@ -220,7 +220,7 @@ body {
 .contact-card h3 {
     color: var(--vinaccia);
     font-size: 1.3rem;
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
 }
 
 .contact-card a {
@@ -236,7 +236,7 @@ body {
 
 /* Footer */
 .footer {
-    background: var(--vinaccia-dark);
+    background: var(--vinaccia);
     color: var(--white);
     text-align: center;
     padding: 40px 0;
