@@ -17,7 +17,11 @@
 }
 
 body {
-    font-family: 'Georgia', serif;
+    font-family: "Baskervville", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    /*font-family: 'Georgia', serif;*/
     line-height: 1.6;
     color: var(--text-dark);
     background: linear-gradient(135deg, var(--cream) 0%, #FFFFFF 100%);
@@ -71,7 +75,7 @@ body {
 }
 
 .hero p {
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-size: clamp(1.4rem, 2rem, 2rem);
     margin-bottom: 2rem;
     opacity: 0.9;
     font-style: italic;
@@ -110,7 +114,7 @@ body {
 /* Scroll indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 30px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     color: var(--white);
@@ -347,7 +351,7 @@ body {
     }
 
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .cta-button {
