@@ -41,7 +41,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: linear-gradient(135deg, var(--vinaccia-dark) 0%, var(--vinaccia) 50%, var(--vinaccia-light) 100%);
+    background: linear-gradient(135deg, var(--vinaccia-light) 0%, var(--vinaccia) 70%, var(--vinaccia-dark) 100%);
     color: var(--white);
 }
 
@@ -236,7 +236,7 @@ body {
 
 /* Footer */
 .footer {
-    background: var(--vinaccia);
+    background: var(--vinaccia-light);
     color: var(--white);
     text-align: center;
     padding: 40px 0;
