@@ -12,8 +12,27 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <!-- Menu minimale -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#home" class="logo">Sara Marcucci</a>
+                <ul class="nav-menu">
+                    <li><a href="#servizi">Servizi</a></li>
+                    <li><a href="#about">Chi sono</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
                 <h1 style="display: none">Sara Marcucci - Copywriter</h1>
@@ -24,7 +43,8 @@
                 <p>La strategia giusta è</p>
                 <p><span class="copy">raccontarti!</span></p>
 
-                <a href="#contact" class="cta-button">Lavoriamo insieme</a>
+                <a style="display: none" href="#contact" class="cta-button">Lavoriamo insieme</a>
+
             </div>
         </div>
         <div class="scroll-indicator">
@@ -86,5 +106,24 @@
             <p>&copy; 2025 samachecopy</p>
         </div>
     </footer>
+
+    <script>
+        // Menu mobile
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Chiudi menu mobile quando clicchi su un link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
