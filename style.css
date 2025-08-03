@@ -311,8 +311,8 @@ body {
 
 /* Footer */
 .footer {
-    background: var(--vinaccia-light);
-    color: var(--white);
+    background: var(--rosa-piuma);
+    color: var(--text-dark);
     text-align: center;
     padding: 40px 0;
 }
